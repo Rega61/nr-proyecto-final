@@ -1,0 +1,10 @@
+.footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-bg-header-footer);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  user-select: none;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0);
+}

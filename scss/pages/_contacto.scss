@@ -1,0 +1,32 @@
+.contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.contacto h1 {
+  text-align: center;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.lista-contacto {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-contacto li {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+.lista-contacto a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.lista-contacto a:hover {
+  text-decoration: underline;
+}

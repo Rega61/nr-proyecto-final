@@ -1,0 +1,10 @@
+@use 'utils/variables' as *;
+@use 'layout/base';
+@use 'layout/header';
+@use 'pages/bienvenida';
+@use 'pages/sobre-mi';
+@use 'pages/proyectos';
+@use 'pages/habilidades';
+@use 'pages/contacto';
+@use 'layout/footer';
+@use 'components/button';

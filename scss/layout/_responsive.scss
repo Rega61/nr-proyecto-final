@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .menu-toggle-label {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: $color-bg-header-footer;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 1.5rem;
+    border-radius: 0 0 0 10px;
+    box-shadow: -3px 5px 15px rgba(30, 144, 255, 0.5);
+    z-index: 105;
+  }
+
+  .menu-toggle-checkbox:checked ~ nav .nav-list {
+    display: flex;
+  }
+    .projects-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    width: 100%;
+    right: 0;
+    border-radius: 0;
+  }
+
+  .header {
+    padding: 0 1rem;
+  }
+  
+}
