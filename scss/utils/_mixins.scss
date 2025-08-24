@@ -1,11 +1,9 @@
-// Mixin flex centrado
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// Mixin para media
 @mixin respond-to($breakpoint) {
   @if $breakpoint == mobile {
     @media (max-width: 768px) { @content; }

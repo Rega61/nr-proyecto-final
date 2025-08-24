@@ -1,6 +1,8 @@
-$color-bg: #000000;
-$color-bg-header-footer: #000000;
-$color-text: #ffffff;
-$color-primary: #007bff;
-$font-family: 'Arial', sans-serif;
-$transition-speed: 0.3s;
+:root {
+  --color-bg: #000000;
+  --color-bg-header-footer: #000000;
+  --color-text: #ffffff;
+  --color-primary: #007bff;
+
+  --font-family: 'Arial', sans-serif;
+}

@@ -1,13 +1,13 @@
-/* Variables */
-$color-bg: #000;      
-$color-text: #fff;    
-$color-active-bg: #fff;
-$color-active-text: #000;
+$color-bg: #000;
+$color-text: #fff;
+$color-active-bg: #007bff;
+$color-active-text: rgb(255, 255, 255);
+
 
 /* Navbar principal */
 .navbar {
   background-color: $color-bg !important;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
 
   .navbar-brand {
     display: flex;
@@ -16,7 +16,7 @@ $color-active-text: #000;
     img {
       height: 50px;
       width: auto;
-      margin-right: 0.5rem;
+      margin-right: 0.75rem;
     }
 
     &:hover {
@@ -47,7 +47,7 @@ $color-active-text: #000;
     }
   }
 
-  /* Botón hamburguesa */
+  /* Botón hamburguesa personalizado */
   .navbar-toggler {
     border: none;
     background: transparent;
@@ -59,7 +59,7 @@ $color-active-text: #000;
     }
 
     .navbar-toggler-icon {
-      background-image: none; 
+      background-image: none; // quitamos el icono default
       position: relative;
       width: 28px;
       height: 3px;
