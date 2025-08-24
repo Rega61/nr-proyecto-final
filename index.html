@@ -9,59 +9,85 @@
   <meta name="keywords" content="reparación celulares, Arduino, Python, portafolio, Nicolás Regali" />
   <meta name="author" content="Nicolás Regali" />
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- Header con navegación principal -->
-<header class="header" role="banner">
-  <div class="logo" aria-label="Logotipo de Nicolás Regali">
-    <img src="./img/logopag1.jpg" alt="Logotipo de Nicolás Regali">
-  </div>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-controls="primary-navigation" aria-expanded="false" />
-    <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menú de navegación">
-      <span class="hamburger"></span>
-    </label>
-    <nav id="primary-navigation" aria-label="Menú principal de navegación">
-      <ul class="nav-list">
-        <li><a href="./index.html" class="active" aria-current="page">Inicio</a></li>
-        <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
-        <li><a href="./pages/proyectos.html">Proyectos</a></li>
-        <li><a href="./pages/habilidades.html">Habilidades</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header>
+  <!-- Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Logo a la izquierda -->
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logopag1.jpg" alt="Logo NR" width="40" height="40" class="d-inline-block align-text-top me-2">
+      </a>
+
+      <!-- Botón hamburguesa a la derecha -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú desplegable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/habilidades.html">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
   <!-- Contenido principal -->
   <main class="main-content intro" role="main">
-  <section class="bienvenida">
-  <h1 class="titulo-principal">¡Bienvenido a mi portafolio!</h1>
+    <section class="bienvenida">
+      <h1 class="titulo-principal">¡Bienvenido a mi portafolio!</h1>
 
-<section class="contenedor-bienvenida">
-    <div class="text-bienvenida">
-      <h2>Hola, soy Nico Regali 👋</h2>
-      <h3>Especialista en reparación de celulares, proyectos con Arduino y programación en Python.</h3>
-      <p>Explorá mis habilidades, conocé mi experiencia y descubrí algunos de los proyectos en los que estoy trabajando.</p>
-      <a href="./pages/sobre-mi.html" class="btn" role="button">Sobre mí</a>
-    </div>
+      <section class="contenedor-bienvenida d-flex flex-column flex-lg-row align-items-center">
+        <div class="text-bienvenida p-3" data-aos="fade-right">
+          <h2>Hola, soy Nico Regali 👋</h2>
+          <h3>Especialista en reparación de celulares, proyectos con Arduino y programación en Python.</h3>
+          <p>Explorá mis habilidades, conocé mi experiencia y descubrí algunos de los proyectos en los que estoy trabajando.</p>
+          <a href="./pages/sobre-mi.html" class="btn btn-primary" role="button">Sobre mí</a>
+        </div>
 
-    <div class="imagen-bienvenida">
-      <img src="./img/Yo1.jpg" alt="Foto de Nicolás Regali" class="animated-img">
-    </div>
-  </section>
-</main>
+        <div class="imagen-bienvenida p-3" data-aos="fade-left">
+          <img src="./img/Yo1.jpg" alt="Foto de Nicolás Regali" class="animated-img img-fluid rounded">
+        </div>
+      </section>
+    </section>
+  </main>
 
-
-  <!-- Pie de página -->
-  <footer class="footer" role="contentinfo">
-    <p>© 2025 Nicolás Regali</p>
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light text-center py-3" role="contentinfo">
+    <p class="mb-0">© 2025 Nicolás Regali</p>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

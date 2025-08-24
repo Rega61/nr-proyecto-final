@@ -1,4 +1,6 @@
-/* SECCIÓN SOBRE MÍ */
+/* =====================
+   SECCIÓN SOBRE MÍ
+===================== */
 .sobre-mi-contenedor {
   display: flex;
   gap: 2rem;
@@ -6,40 +8,75 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 2rem;
+
+  .texto-sobre-mi {
+    flex: 1;
+    max-width: 700px;
+    text-align: left;
+  }
 }
 
-.texto-sobre-mi {
-  flex: 1;
-  max-width: 600px;
-  text-align: left;
-}
-
-/* Carrusel de imágenes */
+/* Carrusel CSS antiguo */
 .carrusel-css {
-  width: 400px;
-  height: 600px;
+  width: 400px;            
+  height: 600px;           
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
-.carrusel-css .imagenes {
-  width: 300%;
-  height: 100%;
-  display: flex;
-  animation: slide 45s infinite;
-}
+  .imagenes {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: slide 5s infinite;
 
-.carrusel-css img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
 
 @keyframes slide {
   0% { transform: translateX(0%); }
   33.33% { transform: translateX(-100%); }
   66.66% { transform: translateX(-200%); }
   100% { transform: translateX(0%); }
+}
+
+/* Carrusel */
+#carruselFotos {
+  width: 100%;
+  max-width: 400px;       
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+  .carousel-inner {
+    width: 100%;
+    height: 500px;        
+
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+
+      img.carrusel-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
+        border-radius: 12px;
+      }
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .carousel-inner {
+      height: 300px;         
+  }
 }
